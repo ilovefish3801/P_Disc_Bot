@@ -1,5 +1,7 @@
+require("dotenv").config()
+
 const { Client, GatewayIntentBits } = require('discord.js');
-const TOKEN = 'MTM2MDY3NDY1MDQ3MjA1NDk4Ng.GpsCDA.2VmCrtGaYef847pFLfwc4M_Wq_Azr1g7yyYp5w'; // Replace with your bot token
+const TOKEN = process.env.TOKEN;
 const NICKNAME = 'Pasha';
 
 const client = new Client({
